@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide CarouselController;
 import 'package:emtrade_app/core/constants/constants.dart';
 
 class QCarousel extends StatefulWidget {
@@ -15,7 +15,9 @@ class QCarousel extends StatefulWidget {
 
 class _QCarouselState extends State<QCarousel> {
   int currentIndex = 0;
-  final CarouselController carouselController = CarouselController();
+  // final CarouselController carouselController = CarouselController();
+  final CarouselSliderController carouselController =
+      CarouselSliderController();
   @override
   Widget build(BuildContext context) {
     return Column(

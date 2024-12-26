@@ -80,7 +80,7 @@ class _BasicMainNavigationViewState extends State<BasicMainNavigationView> {
                     CupertinoIcons.book,
                     size: 24.0,
                   ),
-                  label: 'Academy',
+                  label: 'Profile',
                 ),
               ],
               currentIndex: _selectedIndex,
